@@ -24,7 +24,7 @@ public class CatchBall extends Application {
         canvas.getChildren().add(ball);
         List<Circle> apples = generateApples();
         canvas.getChildren().addAll(apples);
-        scene.addEventFilter(KeyEvent.KEY_PRESSED,
+/*        scene.addEventFilter(KeyEvent.KEY_PRESSED,
                 event -> {
                     int deltaX = 0;
                     int deltaY = 0;
@@ -38,7 +38,7 @@ public class CatchBall extends Application {
                     ball.setCenterY(ball.getTranslateY() + ball.getCenterY() + deltaY);
                     catchEnemy(ball, apples, canvas);
                 }
-        );
+        ); */
         stage.setScene(scene);
         stage.show();
         stage.setTitle("PackMan minimal");
